@@ -17,6 +17,8 @@ RUN echo "Starting installation of Jenkins Plugins" \
                               "azure-credentials" \
                               "azure-keyvault" \
                               "terraform" \
+                              "workflow-aggregator" \
+                              "pipeline-github" \
     && echo "Done"
 
 COPY ./default-user.groovy /usr/share/jenkins/ref/init.groovy.d/
