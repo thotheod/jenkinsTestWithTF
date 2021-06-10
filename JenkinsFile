@@ -9,16 +9,7 @@ pipeline{
         PATH = "$TF_HOME:$PATH"
     }
     stages {
-
-        stage('Just testing approval'){
-            steps {
-                timeout(time: 10, unit: 'MINUTES') {
-                    input (message: "Deploy the infrastructure?")
-                }
-            }
         
-        }
-    
         stage('Terraform Init'){
             
             steps {
@@ -85,16 +76,7 @@ pipeline{
                 }
             }
         }
-
-        stage('Waiting for Approval'){
-            steps {
-                timeout(time: 10, unit: 'MINUTES') {
-                    input (message: "Deploy the infrastructure?")
-                }
-            }
-        
-        }
-    
+       
 
         stage('Terraform Apply'){
             steps {
