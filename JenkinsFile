@@ -23,7 +23,8 @@ pipeline{
                 ), string(credentialsId: 'access_key', variable: 'ARM_ACCESS_KEY')]) {
                         
                         sh """
-                                
+                        #!/bin/bash +x
+                        echo "started init"    
                         echo "Initialising Terraform ClientID: $ARM_CLIENT_ID"
                         echo "Applying the plan"
                         terraform init 
