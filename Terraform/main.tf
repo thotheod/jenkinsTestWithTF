@@ -5,6 +5,7 @@ terraform {
         storage_account_name  = "tfstate26116"
         container_name        = "tfstate"
         key                   = "terraform.tfstate"
+        access_key            = "R3OIrPyhUr6js4v5yAn++Deys9enoMJaG74J6S7X/uAwFxQN06k8wPL9ZTZGJnVt0ArwKBwcVbZGe03vXrzOXA=="
     }
     required_providers {
         azurerm = {
