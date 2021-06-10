@@ -24,7 +24,8 @@ pipeline{
                         
                         sh """
                                 
-                        echo "Initialising Terraform"
+                        echo "Initialising Terraform ClientID: $ARM_CLIENT_ID"
+                        echo "Applying the plan"
                         terraform init 
                         """
                            }
