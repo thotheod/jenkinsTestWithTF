@@ -24,6 +24,8 @@ provider "azurerm" {
 
 }
 
+resource "random_pet" "prefix" {}
+ 
 # Create a resource group
 resource "azurerm_resource_group" "rg" {
   name     = "rg-${var.prefix}TF"
@@ -32,7 +34,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 resource "azurerm_storage_account" "example" {
-  name                     = "storageaccountname"
+  name                     = "storageaccountname${random_pet.prefix.id}"
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = var.location
   account_tier             = "Standard"
