@@ -34,7 +34,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 resource "azurerm_storage_account" "example" {
-  name                     = "storageaccountname${random_pet.prefix.id}"
+  name                     = "stthotheod123454321"
   resource_group_name      = azurerm_resource_group.rg.name
   location                 = var.location
   account_tier             = "Standard"
