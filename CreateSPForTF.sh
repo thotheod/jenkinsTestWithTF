@@ -15,7 +15,7 @@ declare RGSUFFIX="testjenkins"
 declare ACRNAME="acrtt2021060903"
 declare -r JENKINS_USERNAME="demouser"
 declare -r JENKINS_PASSWORD="demo@pass123"
-
+ 
 SUBSCRIPTION=0a52391c-0d81-434e-90b4-d04f5c670e8a #MS
 
 
