@@ -37,8 +37,6 @@ printf "$green"   "storage_account_name: $STORAGE_ACCOUNT_NAME"
 printf "$green"   "container_name: $CONTAINER_NAME"
 printf "$green"   "access_key: $ACCOUNT_KEY"
 
-# storage_account_name: tfstate26116
-# container_name: tfstate
-# access_key: R3OIrPyhUr6js4v5yAn++Deys9enoMJaG74J6S7X/uAwFxQN06k8wPL9ZTZGJnVt0ArwKBwcVbZGe03vXrzOXA==
 
-export ARM_ACCESS_KEY=R3OIrPyhUr6js4v5yAn++Deys9enoMJaG74J6S7X/uAwFxQN06k8wPL9ZTZGJnVt0ArwKBwcVbZGe03vXrzOXA==
+
+export ARM_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
