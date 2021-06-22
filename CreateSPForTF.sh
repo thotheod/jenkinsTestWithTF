@@ -24,4 +24,4 @@ printf "$blue"  "*** Setting the subsription to $SUBSCRIPTION***"
  az account set --subscription "$SUBSCRIPTION"
 
 printf "$blue"  "*** create the SP ***"
- az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/$SUBSCRIPTION"
+ az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/$SUBSCRIPTION"  
